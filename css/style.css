@@ -18,3 +18,143 @@ html,body{
     --Desaturated-blue: hsl(224, 23%, 55%);
     --Dark-blue: hsl(223, 47%, 23%);
 }
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--Pale-blue);
+}
+
+main{
+    width: 420px;
+    height: 100%;
+    max-height: 640px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 4%;
+}
+
+header img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.content-text{
+    text-align: center;
+}
+
+.content-text h1{
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--Dark-blue);
+    margin-bottom: 15px;
+}
+
+.content-text p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+
+.content-plan{
+    background-color: var(--Very-pale-blue);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+.content-plan .content-plan-left{
+    display: flex;
+}
+
+.content-plan-text{
+    margin-left: 15px;
+}
+
+.content-plan-text > h2{
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+
+.content-plan-text > p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+
+.content-plan-right > a{
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--Bright-blue);
+}
+
+.content-plan-right > a:hover{
+    text-decoration: none;
+    color: #766cf1;
+}
+
+.content-submit-order{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-submit-order input{
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: var(--Bright-blue);
+    cursor: pointer;
+}
+
+.content-submit-order input:hover{
+    background-color: #766cf1;
+}
+
+.content-submit-order a{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--Desaturated-blue);
+}
+
+.content-submit-order a:hover{
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+
+@media screen and (max-width:375px){
+    
+    body{
+        background-image: url('../images/pattern-background-mobile.svg');
+    }
+
+    .container{
+        padding: 30px;
+    }
+}

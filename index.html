@@ -8,6 +8,10 @@
   
   <title>Project | Order summary card</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,34 +19,38 @@
   <main>
 
     <header>
-      <img src="images/illustration-hero.svg" alt="pattern-background-desktop">
+      <img src="images/illustration-hero.svg" alt="illustration-hero">
     </header>
 
-    <div class="content-text">
-      <h1>Order Summary</h1>
-      <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
-    </div>
+    <section class="container">
 
-    <section class="content-plan">
-
-      <div class="content-plan-price-left">
-        <img src="images/icon-music.svg" alt="">
-        <div class="content-plan-price-left-text">
-          <h2>Annual Plan</h2>
-          <p>&dollar;59.99/year</p>
+      <div class="content-text">
+        <h1>Order Summary</h1>
+        <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+      </div>
+  
+      <section class="content-plan">
+  
+        <div class="content-plan-left">
+          <img src="images/icon-music.svg" alt="">
+          <div class="content-plan-text">
+            <h2>Annual Plan</h2>
+            <p>&dollar;59.99/year</p>
+          </div>
         </div>
-      </div>
+  
+        <div class="content-plan-right">
+          <a href="#">Change</a>
+        </div>
+  
+      </section>
+  
+      <section class="content-submit-order">
+        <input type="submit" value="Proceed to Payment">
+        <a href="#">Cancel Order</a>
+      </section>
 
-      <div class="content-plan-right">
-        <a href="">Change</a>
-      </div>
-      
     </section>
-
-    <footer>
-      <input type="submit" value="Proceed to Payment">
-      <p>Cancel Order</p>
-    </footer>
     
   </main>
   
