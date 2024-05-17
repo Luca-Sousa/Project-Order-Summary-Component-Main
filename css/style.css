@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Red Hat Display";
+    font-size: 1rem;
     /* Weights: 500, 700, 900 */
     /* Font size (paragraph): 16px */
 }
@@ -48,6 +49,7 @@ header img{
     height: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    pointer-events: none;
 }
 
 .container{
@@ -63,14 +65,13 @@ header img{
 }
 
 .content-text h1{
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 900;
     color: var(--Dark-blue);
     margin-bottom: 15px;
 }
 
 .content-text p{
-    font-size: 16px;
     font-weight: 500;
     color: var(--Desaturated-blue);
 }
@@ -92,20 +93,21 @@ header img{
     margin-left: 15px;
 }
 
+.content-plan-left img{
+    pointer-events: none;
+}
+
 .content-plan-text > h2{
-    font-size: 16px;
     font-weight: 900;
     color: var(--Dark-blue);
 }
 
 .content-plan-text > p{
-    font-size: 16px;
     font-weight: 500;
     color: var(--Desaturated-blue);
 }
 
 .content-plan-right > a{
-    font-size: 16px;
     font-weight: 900;
     color: var(--Bright-blue);
 }
@@ -124,7 +126,6 @@ header img{
     height: 50px;
     border: 0;
     border-radius: 10px;
-    font-size: 16px;
     font-weight: 700;
     color: white;
     background-color: var(--Bright-blue);
@@ -140,7 +141,6 @@ header img{
     text-decoration: none;
     text-align: center;
     margin-top: 25px;
-    font-size: 16px;
     font-weight: 700;
     color: var(--Desaturated-blue);
 }
